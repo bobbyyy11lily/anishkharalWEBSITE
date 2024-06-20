@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.alkatra {
+    font-family: 'Alkatra', cursive;
+}
+
+.robotocon {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.delight {
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.heebo {
+    font-family: 'Heebo', sans-serif;
+}
+
+.signika {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.sedgwick{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.caveat {
+    font-family: 'Caveat', cursive;
+}

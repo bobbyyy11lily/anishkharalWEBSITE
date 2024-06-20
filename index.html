@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANISH KHARAL</title>
+    <link rel="shortcut icon" href="./src/img/anish-kharal.jpg" type="image/x-icon">
+    <link href="./src/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/text.css">
+    <script src="./src/js/all.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- FOR PC -->
+    <!-- MENU START -->
+    <nav class="p-6 hidden md:block fixed t-0 l-0 w-[100%] z-100 bg-white">
+        <div class="flex justify-between items-center">
+            <a href="./" class="caveat text-2xl font-bold select-none">ANISH KHARAL</a>
+            <div class="robotocon text-lg space-x-9">
+                <a href="./" class="bg-blue-300 py-[30px] px-3">HOME</a>
+                <a href="./about" class="hover:bg-blue-300 transition duration-[800ms] p-4">ABOUT</a>
+                <a href="./services" class="hover:bg-blue-300 transition duration-[800ms] p-4">SERVICES</a>
+                <a href="./portfolio" class="hover:bg-blue-300 transition duration-[800ms] p-4">PORTFOLIO</a>
+                <a href="./contact-now" class="bg-blue-900 p-4 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </nav>
+    <!-- END MENU -->
+
+    <!-- MIDDLE GROUND -->
+    <div class="hidden md:block">
+        <div class="p-8 h-screen bg-gradient-to-r from-blue-300 to-blue-500 md:pt-24 pt-16">
+            <div class="flex flex-row justify-between items-center">
+                <div class="space-y-4 basis-1/2">
+                    <hr class="w-[100px] h-[6px] bg-blue-900">
+                    <h2 class="signika text-6xl font-bold">Hi! I am Anish Kharal<br>A Data Scientist.</h2><br><br>
+                    <a href="./contact-now" class="bg-blue-700 rounded-lg px-10 py-3 font-bold text-white">contact
+                        me</a>
+                    <a href="./portfolio" class="rounded-lg font-bold text-blue-800 ml-7">browse portfolio</a>
+                </div>
+                <div class="items-center">
+                    <img src="./src/img/anish-kharal.jpg" alt="Nishant Subedi" width="450px" class="rounded-full">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MG -->
+    <!-- END FOR PC -->
+
+    <!-- FOR MOBILE -->
+    <!-- MENU MOBILE -->
+    <div id="nav-menu-mobile" class="md:hidden fixed w-full">
+        <nav class="flex justify-between p-8 bg-white">
+            <div id="logo" class="select-none text-3xl caveat font-bold">
+                ANISH KHARAL</span>
+            </div>
+            <button onclick="mobMenu()"> <i class="fa fa-bars"></i> </button>
+        </nav>
+        <div class="flex justify-end">
+            <div id="mobile-menu"
+                class="hidden flex-col signika text-lg bg-white fixed text-center rounded-3xl mr-3 -mt-8">
+                <a href="./" class="bg-blue-300 p-2">HOME</a>
+                <a href="./about" class="hover:bg-blue-300 transition duration-[800ms] p-2">ABOUT</a>
+                <a href="./services" class="hover:bg-blue-300 transition duration-[800ms] p-2">SERVICES</a>
+                <a href="./portfolio" class="hover:bg-blue-300 transition duration-[800ms] p-2">PORTFOLIO</a>
+                <a href="./contact-now" class="bg-blue-900 p-2 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- MENU MOBILE END -->
+
+    <!-- MIDDLE GROUND -->
+    <div class="md:hidden">
+        <div class="h-screen bg-gradient-to-r from-blue-300 to-blue-500 pt-[120px] px-5">
+            <div class="flex flex-col justify-between items-center">
+                <div class="items-center">
+                    <img src="./src/img/anish-kharal.jpg" alt="Nishant Subedi" width="250" class="rounded-full">
+                </div>
+                <div class="space-y-10 basis-1/2">
+                    <h2 class="signika text-3xl font-bold text-center">Hi! I am Anish Kharal<br>A Data Scientist.</h2><br><br>
+                    <a href="./contact-now" class="bg-blue-700 rounded-lg px-10 py-3 font-bold text-white">contact
+                        me</a>
+                    <a href="./portfolio" class="rounded-lg font-bold text-blue-800 ml-7">browse portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MG -->
+    <!-- END FOR MOBILE -->
+
+    <footer class="bg-gradient-to-l from-gray-600 to-gray-900 p-2 md:p-4">
+        <p class="text-center ubuntu text-white">ANISH KHARAL</p>
+    </footer>
+
+</body>
+
+</html>

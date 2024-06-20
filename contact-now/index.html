@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISHANT SUBEDI</title>
+    <link rel="shortcut icon" href="../src/img/nishant-subedi.png" type="image/x-icon">
+    <link href="../src/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/text.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../src/js/all.js"></script>
+    <script>pageUD();</script>
+</head>
+
+<body>
+    <!-- FOR PC -->
+    <!-- MENU START -->
+    <nav class="p-6 hidden md:block fixed t-0 l-0 w-[100%] z-100 bg-white">
+        <div class="flex justify-between items-center">
+            <a href="../" class="caveat text-2xl font-bold">NISHANT SUBEDI</a>
+            <div class="robotocon text-lg space-x-9">
+                <a href="../" class="hover:bg-sky-300 p-4 transition duration-[800ms]">HOME</a>
+                <a href="../about" class="hover:bg-sky-300 transition duration-[800ms] p-4">ABOUT</a>
+                <a href="../services" class="hover:bg-sky-300 transition duration-[800ms] p-4">SERVICES</a>
+                <a href="../portfolio" class="hover:bg-sky-300 transition duration-[800ms] p-4">PORTFOLIO</a>
+                <a href="../contact-now" class="bg-sky-900 p-4 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </nav>
+    <!-- END MENU -->
+    <!-- MIDDLE GROUND -->
+    <div class="hidden md:block">
+        <div class="p-8 h-screen bg-gradient-to-r from-sky-300 to-sky-500 md:pt-24 pt-16">
+            <h2 class="text-6xl signika text-center font-bold">CONTACT FORM</h2>
+            <p class="text-center signika">(All the fields are required!)</p>
+            <div class="flex flex-row justify-between items-center">
+                <div class="basis-1/2">
+                    <div class="flex flex-row">
+                        <form action=""
+                            class="bg-sky-200 p-5 shadow-md shadow-blue-600 outline-none rounded-3xl ubuntu basis-1/2 text-center">
+                            <p>*SERVICE UNAVAILABLE*</p>
+                            <input type="email" id="mail" name="mail" placeholder="ENTER YOUR E-MAIL" required
+                                class="outline-none p-2 m-3 rounded-md shadow-md shadow-purple-800 text-center" onclick="errorDisplay()" maxlength="0"><br>
+                            <input type="name" id="name" name="name" placeholder="ENTER YOUR FULL NAME" required
+                                class="outline-none p-2 m-3 rounded-md shadow-md shadow-purple-800 text-center" onclick="errorDisplay()" maxlength="0"><br>
+                            <textarea id="descriptiom" placeholder="DESCRIPTION (max: 200)" required
+                                class="outline-none p-2 m-3 rounded-md shadow-md shadow-purple-800 text-center resize-none" rows="5" cols="50" onclick="errorDisplay()" maxlength="0" required></textarea>
+                            <div class="flex flex-row">
+                                <div class="basis-1/2">
+                                    <input type="submit" value="SUBMIT" id="submit"
+                                        class="p-2 text-base bg-sky-700 text-white rounded-md" onclick="errorDisplay()">
+                                </div>
+                                <div class="basis-1/2">
+                                    <input type="reset" value="RESET" id="reset"
+                                        class="p-2 text-base bg-sky-700 text-white rounded-md" onclick="errorDisplay()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="items-center">
+                    <img src="../src/img/contact.png" alt="ERROR LOADING IMAGE :(" width="550">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MG -->
+    <!-- END FOR PC -->
+
+    <!-- FOR MOBILE -->
+    <!-- MENU MOBILE -->
+    <div id="nav-menu-mobile" class="md:hidden fixed w-full">
+        <nav class="flex justify-between p-8 bg-white">
+            <div id="logo" class="select-none text-3xl caveat font-bold">
+                NISHANT SUBEDI</span>
+            </div>
+            <button onclick="mobMenu()"> <i class="fa fa-bars"></i> </button>
+        </nav>
+        <div class="flex justify-end">
+            <div id="mobile-menu"
+                class="hidden flex-col signika text-lg bg-white fixed text-center rounded-3xl mr-3 -mt-8">
+                <a href="../" class="hover:bg-blue-300 p-2 transition duration-[800ms]">HOME</a>
+                <a href="../about" class="hover:bg-blue-300 transition duration-[800ms] p-2">ABOUT</a>
+                <a href="../services" class="hover:bg-blue-300 transition duration-[800ms] p-2">SERVICES</a>
+                <a href="../portfolio" class="hover:bg-blue-300 transition duration-[800ms] p-2">PORTFOLIO</a>
+                <a href="../contact-now" class="bg-blue-900 p-2 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- MENU MOBILE END -->
+    <!-- MIDDLE GROUND -->
+    <div class="md:hidden">
+        <div class="px-8 bg-gradient-to-r from-sky-300 to-sky-500 pt-[110px]">
+            <h2 class="text-6xl signika text-center font-bold">CONTACT FORM</h2>
+            <p class="text-center signika">(All the fields are required!)</p>
+            <div class="flex flex-col items-center">
+                <div class="basis-1/2">
+                    <div class="flex flex-col">
+                        <form action=""
+                            class="bg-sky-200 p-3 shadow-md shadow-blue-600 outline-none rounded-3xl ubuntu basis-1/2 text-center mb-10 mt-5">
+                            <p>*SERVICE UNAVAILABLE*</p>
+                            <input type="email" id="mail" name="mail" placeholder="ENTER YOUR E-MAIL" required
+                                class="outline-none p-2 m-3 rounded-md shadow-md shadow-purple-800 text-center" onclick="errorDisplay()" maxlength="0"><br>
+                            <input type="name" id="name" name="name" placeholder="ENTER YOUR FULL NAME" required
+                                class="outline-none p-2 m-3 rounded-md shadow-md shadow-purple-800 text-center" onclick="errorDisplay()" maxlength="0"><br>
+                            <textarea id="descriptiom" placeholder="DESCRIPTION (max: 200)" required
+                                class="outline-none p-2 m-3 rounded-md shadow-md shadow-purple-800 text-center resize-none" rows="10" cols="20" onclick="errorDisplay()" maxlength="0" required></textarea>
+                            <div class="flex flex-row">
+                                <div class="basis-1/2">
+                                    <input type="submit" value="SUBMIT" id="submit"
+                                        class="p-2 text-base bg-sky-700 text-white rounded-md" onclick="errorDisplay()">
+                                </div>
+                                <div class="basis-1/2">
+                                    <input type="reset" value="RESET" id="reset"
+                                        class="p-2 text-base bg-sky-700 text-white rounded-md" onclick="errorDisplay()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MG -->
+    <!-- MOBILE END -->
+
+
+    <footer class="bg-gradient-to-l from-gray-600 to-gray-900 p-2 md:p-4">
+        <p class="text-center ubuntu text-white">Copyright &copy; 2023 Nishant Subedi. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="../src/js/error.js"></script>
+</html>

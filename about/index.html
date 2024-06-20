@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISHANT SUBEDI</title>
+    <link rel="shortcut icon" href="../src/img/nishant-subedi.png" type="image/x-icon">
+    <link href="../src/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/text.css">
+    <script src="../src/js/all.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>pageUD();</script>
+</head>
+
+<body>
+    <!-- FOR PC -->
+    <!-- MENU START -->
+    <nav class="p-6 hidden md:block fixed t-0 l-0 w-[100%] z-100 bg-white">
+        <div class="flex justify-between items-center">
+            <a href="../" class="caveat text-2xl font-bold select-none">NISHANT SUBEDI</a>
+            <div class="robotocon text-lg space-x-9">
+                <a href="../" class="hover:bg-purple-300 p-4 transition duration-[800ms]">HOME</a>
+                <a href="../about" class="bg-purple-300 py-[30px] px-3">ABOUT</a>
+                <a href="../services" class="hover:bg-purple-300 transition duration-[800ms] p-4">SERVICES</a>
+                <a href="../portfolio" class="hover:bg-purple-300 transition duration-[800ms] p-4">PORTFOLIO</a>
+                <a href="../contact-now" class="bg-purple-900 p-4 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </nav>
+    <!-- END MENU -->
+    <!-- MIDDLE GROUND -->
+    <div class="hidden md:block">
+        <div class="p-8 h-screen bg-gradient-to-r from-purple-300 to-purple-500 md:pt-24 pt-16">
+            <h2 class="text-6xl font-bold text-center signika">ABOUT</h2>
+            <div class="flex flex-row justify-between items-center">
+                <div class="space-y-4 basis-1/2">
+                    <!-- comment -->
+                </div>
+                <div class="items-center">
+                    <img src="../src/img/nishant-suedi.png" alt="ERROR LOADING IMAGE" width="550">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MG -->
+    <!-- END FOR PC -->
+
+    <!-- FOR MOBILE -->
+    <!-- MENU MOBILE -->
+    <div id="nav-menu-mobile" class="md:hidden fixed w-full">
+        <nav class="flex justify-between p-8 bg-white">
+            <div id="logo" class="select-none text-3xl caveat font-bold">
+                NISHANT SUBEDI</span>
+            </div>
+            <button onclick="mobMenu()"> <i class="fa fa-bars"></i> </button>
+        </nav>
+        <div class="flex justify-end">
+            <div id="mobile-menu"
+                class="hidden flex-col signika text-lg bg-white fixed text-center rounded-3xl mr-3 -mt-8">
+                <a href="../" class="hover:bg-blue-300 p-2 transition duration-[800ms]">HOME</a>
+                <a href="../about" class="bg-blue-300 p-2">ABOUT</a>
+                <a href="../services" class="hover:bg-blue-300 transition duration-[800ms] p-2">SERVICES</a>
+                <a href="../portfolio" class="hover:bg-blue-300 transition duration-[800ms] p-2">PORTFOLIO</a>
+                <a href="../contact-now" class="bg-blue-900 p-2 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- MENU MOBILE END -->
+    <!-- MIDDLE GROUND -->
+    <div class="md:hidden">
+        <div class="pt-[110px] h-screen bg-gradient-to-r from-purple-300 to-purple-500 ">
+            <h2 class="text-6xl font-bold text-center signika">ABOUT</h2>
+            <div class="flex flex-col justify-between items-center">
+                <div class="basis-1/2">
+                   <p>*NOTHING TO SHOW HERE*</p>
+                </div>
+                <div class="items-center">
+                    <img src="../src/img/nishant-suedi.png" alt="ERROR LOADING IMAGE" width="350">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MG -->
+    <!-- MOBILE END -->
+
+    <footer class="bg-gradient-to-l from-gray-600 to-gray-900 p-2 md:p-4">
+        <p class="text-center ubuntu text-white">Copyright &copy; 2023 Nishant Subedi. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
