@@ -1,150 +1,99 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANISH KHARAL</title>
     <link rel="shortcut icon" href="./src/img/anish-kharal.jpg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="./src/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/text.css">
+    <script src="./src/js/all.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
-    <!-- NAVBAR -->
-    <nav class="bg-white shadow fixed w-full z-10 top-0">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-800">ANISH KHARAL</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="hover:text-blue-600">Home</a>
-                <a href="#about" class="hover:text-blue-600">About</a>
-                <a href="#services" class="hover:text-blue-600">Services</a>
-                <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
-                <a href="#contact" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact Now</a>
+<body>
+    <!-- FOR PC -->
+    <!-- MENU START -->
+    <nav class="p-6 hidden md:block fixed t-0 l-0 w-[100%] z-100 bg-white">
+        <div class="flex justify-between items-center">
+            <a href="./" class="caveat text-2xl font-bold select-none">ANISH KHARAL</a>
+            <div class="robotocon text-lg space-x-9">
+                <a href="./" class="bg-blue-300 py-[30px] px-3">HOME</a>
+                <a href="./about" class="hover:bg-blue-300 transition duration-[800ms] p-4">ABOUT</a>
+                <a href="./services" class="hover:bg-blue-300 transition duration-[800ms] p-4">SERVICES</a>
+                <a href="./portfolio" class="hover:bg-blue-300 transition duration-[800ms] p-4">PORTFOLIO</a>
+                <a href="./contact-now" class="bg-blue-900 p-4 rounded-lg text-white">CONTACT NOW</a>
             </div>
-            <button class="md:hidden focus:outline-none" id="menu-button">
-                <i class="fas fa-bars text-blue-800"></i>
-            </button>
         </div>
     </nav>
+    <!-- END MENU -->
 
-    <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="hidden bg-white shadow-lg md:hidden">
-        <a href="#home" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Home</a>
-        <a href="#about" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">About</a>
-        <a href="#services" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Services</a>
-        <a href="#portfolio" class="block px-4 py-2 text-gray-800 hover:bg-blue-100">Portfolio</a>
-        <a href="#contact" class="block px-4 py-2 text-white bg-blue-800 hover:bg-blue-700">Contact Now</a>
+    <!-- MIDDLE GROUND -->
+    <div class="hidden md:block">
+        <div class="p-8 h-screen bg-gradient-to-r from-blue-300 to-blue-500 md:pt-24 pt-16">
+            <div class="flex flex-row justify-between items-center">
+                <div class="space-y-4 basis-1/2">
+                    <hr class="w-[100px] h-[6px] bg-blue-900">
+                    <h2 class="signika text-6xl font-bold">Hi! I am Anish Kharal<br>AI Engineer</h2><br><br>
+                    <a href="./contact-now" class="bg-blue-700 rounded-lg px-10 py-3 font-bold text-white">contact
+                        me</a>
+                    <a href="./portfolio" class="rounded-lg font-bold text-blue-800 ml-7">browse portfolio</a>
+                </div>
+                <div class="items-center">
+                    <img src="./src/img/anish-kharal.jpg" alt="Nishant Subedi" width="450px" class="rounded-full">
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- END MG -->
+    <!-- END FOR PC -->
 
-    <!-- HERO SECTION -->
-    <section id="home" class="bg-gradient-to-r from-blue-400 to-blue-600 text-white h-screen flex items-center">
-        <div class="container mx-auto px-6 text-center md:text-left">
-            <div class="md:flex md:items-center">
-                <div class="md:w-1/2">
-                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">Hi! I am <span class="text-yellow-300">Anish Kharal</span></h1>
-                    <p class="mt-4 text-lg">AI Engineer and Data Scientist passionate about leveraging AI to solve real-world problems.</p>
-                    <div class="mt-6">
-                        <a href="#contact" class="bg-yellow-400 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-500">Contact Me</a>
-                        <a href="#portfolio" class="ml-4 border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 hover:text-black">Browse Portfolio</a>
-                    </div>
+    <!-- FOR MOBILE -->
+    <!-- MENU MOBILE -->
+    <div id="nav-menu-mobile" class="md:hidden fixed w-full">
+        <nav class="flex justify-between p-8 bg-white">
+            <div id="logo" class="select-none text-3xl caveat font-bold">
+                ANISH KHARAL</span>
+            </div>
+            <button onclick="mobMenu()"> <i class="fa fa-bars"></i> </button>
+        </nav>
+        <div class="flex justify-end">
+            <div id="mobile-menu"
+                class="hidden flex-col signika text-lg bg-white fixed text-center rounded-3xl mr-3 -mt-8">
+                <a href="./" class="bg-blue-300 p-2">HOME</a>
+                <a href="./about" class="hover:bg-blue-300 transition duration-[800ms] p-2">ABOUT</a>
+                <a href="./services" class="hover:bg-blue-300 transition duration-[800ms] p-2">SERVICES</a>
+                <a href="./portfolio" class="hover:bg-blue-300 transition duration-[800ms] p-2">PORTFOLIO</a>
+                <a href="./contact-now" class="bg-blue-900 p-2 rounded-lg text-white">CONTACT NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- MENU MOBILE END -->
+
+    <!-- MIDDLE GROUND -->
+    <div class="md:hidden">
+        <div class="h-screen bg-gradient-to-r from-blue-300 to-blue-500 pt-[120px] px-5">
+            <div class="flex flex-col justify-between items-center">
+                <div class="items-center">
+                    <img src="./src/img/anish-kharal.jpg" alt="Nishant Subedi" width="250" class="rounded-full">
                 </div>
-                <div class="hidden md:block md:w-1/2">
-                    <img src="./src/img/anish-kharal.jpg" alt="Anish Kharal" class="rounded-full w-96 mx-auto">
+                <div class="space-y-10 basis-1/2">
+                    <h2 class="signika text-3xl font-bold text-center">Hi! I am Anish Kharal<br>A Data Scientist.</h2><br><br>
+                    <a href="./contact-now" class="bg-blue-700 rounded-lg px-10 py-3 font-bold text-white">contact
+                        me</a>
+                    <a href="./portfolio" class="rounded-lg font-bold text-blue-800 ml-7">browse portfolio</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- END MG -->
+    <!-- END FOR MOBILE -->
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-blue-800">About Me</h2>
-            <p class="mt-4 text-gray-600">I specialize in Artificial Intelligence and Data Science. With hands-on experience in AI projects, I am dedicated to crafting innovative solutions that make an impact.</p>
-            <div class="mt-8 md:flex md:justify-center">
-                <img src="./src/img/about-me.jpg" alt="About Anish" class="rounded-lg shadow-lg w-3/4 md:w-1/3">
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-blue-800">Services</h2>
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <i class="fas fa-robot text-4xl text-blue-800"></i>
-                    <h3 class="text-2xl font-bold mt-4">AI Development</h3>
-                    <p class="mt-2 text-gray-600">Creating intelligent systems that learn and adapt to enhance business processes.</p>
-                </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <i class="fas fa-database text-4xl text-blue-800"></i>
-                    <h3 class="text-2xl font-bold mt-4">Data Science</h3>
-                    <p class="mt-2 text-gray-600">Turning raw data into actionable insights to drive growth and efficiency.</p>
-                </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <i class="fas fa-laptop-code text-4xl text-blue-800"></i>
-                    <h3 class="text-2xl font-bold mt-4">Software Development</h3>
-                    <p class="mt-2 text-gray-600">Building scalable and reliable software tailored to client needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold text-blue-800">Portfolio</h2>
-            <p class="mt-4 text-gray-600">Explore some of my recent projects showcasing expertise in AI and software development.</p>
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="./src/img/project1.jpg" alt="Project 1" class="rounded-lg w-full">
-                    <h3 class="text-2xl font-bold mt-4">Smart Home Automation</h3>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="./src/img/project2.jpg" alt="Project 2" class="rounded-lg w-full">
-                    <h3 class="text-2xl font-bold mt-4">AI Chatbot</h3>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
-                    <img src="./src/img/project3.jpg" alt="Project 3" class="rounded-lg w-full">
-                    <h3 class="text-2xl font-bold mt-4">Data Analysis Dashboard</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold">Get in Touch</h2>
-            <p class="mt-4">Have a project in mind or want to collaborate? Let's connect!</p>
-            <div class="mt-10">
-                <a href="mailto:anishkharal1@gmail.com" class="bg-yellow-400 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-500">Email Me</a>
-            </div>
-            <div class="mt-10">
-                <p>Follow me on social media:</p>
-                <div class="flex justify-center space-x-4 mt-4">
-                    <a href="#" class="hover:text-yellow-400"><i class="fab fa-linkedin text-2xl"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i class="fab fa-github text-2xl"></i></a>
-                    <a href="#" class="hover:text-yellow-400"><i class="fab fa-twitter text-2xl"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-4">
-        <div class="text-center">&copy; 2024 Anish Kharal. All rights reserved.</div>
+    <footer class="bg-gradient-to-l from-gray-600 to-gray-900 p-2 md:p-4">
+        <p class="text-center ubuntu text-white">ANISH KHARAL</p>
     </footer>
 
-    <script>
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
 </body>
 
 </html>
-
